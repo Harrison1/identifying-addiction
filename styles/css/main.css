@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body {
+  font: 100% sans-serif;
+  color: #333;
+  background-color: #f2f2f2;
+  max-width: 600px;
+  min-width: 600px;
+  width: 600px;
+  margin: 0; }
+
+main {
+  background-image: url("../../img/crack-cocaine/blue-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 10px 0 10px; }
+
+.anatomy-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.gray-box-subtitle {
+  background-color: #e6e6e6;
+  box-shadow: 0px 4px #095b8f;
+  color: #095b8f;
+  font-size: 0.8em;
+  margin: 0px 0 10px 0;
+  padding: 10px;
+  text-align: center; }
+
+.header-img {
+  margin: 0 10px 10px 0;
+  width: 100px; }
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+
+.title {
+  color: white;
+  font-size: 38px;
+  margin: 0; }
+
+.symptom-title, .symptom-title-left, .symptom-title-right {
+  color: white;
+  font-size: 1.4em;
+  margin: 5px 0;
+  text-transform: uppercase; }
+
+.symptom-title-left {
+  text-align: left; }
+
+.symptom-title-right {
+  text-align: right; }
+
+.symptom-container, .symptom-container-left, .symptom-container-right {
+  width: 48%; }
+
+.symptom-container-left {
+  border-bottom: 2px solid #cc4949; }
+
+.symptom-container-right {
+  border-bottom: 2px solid #e6ff5b;
+  margin-left: auto; }
+
+.fr-hr {
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.info-box, .restlessness, .headaches, .sweating, .dilated, .twitching, .sad-or-angry, .sniffling, .elated, .sweats, .weight-loss {
+  width: 0%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  overflow: hidden;
+  position: absolute; }
+
+.restlessness {
+  left: 80px;
+  margin-top: 2px; }
+
+.headaches {
+  left: 325px;
+  margin-top: 14px; }
+
+.sweating {
+  left: 48px;
+  margin-top: 46px; }
+
+.dilated {
+  left: 2px;
+  margin-top: 68px; }
+
+.twitching {
+  left: 324px;
+  margin-top: 50px; }
+
+.sad-or-angry {
+  left: 330px;
+  margin-top: 86px; }
+
+.sniffling {
+  left: 310px;
+  margin-top: 90px; }
+
+.elated {
+  left: 46px;
+  margin-top: 112px; }
+
+.sweats {
+  left: 325px;
+  margin-top: 200px; }
+
+.weight-loss {
+  left: 340px;
+  margin-top: 276px; }
+
+.show {
+  width: 200px; }
+
+.show270 {
+  width: 270px; }
+
+.show280 {
+  width: 280px; }
+
+/*# sourceMappingURL=main.css.map */
