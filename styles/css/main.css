@@ -1,18 +1,65 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 body {
-  font: 100% sans-serif;
-  color: #333;
-  background-color: #f2f2f2;
-  max-width: 600px;
-  min-width: 600px;
-  width: 600px;
   margin: 0; }
 
 main {
-  background-image: url("../../img/crack-cocaine/blue-bg.svg");
+  background-image: url("../../img/blue-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px 10px 0 10px; }
+  font: 100% sans-serif;
+  max-width: 580px;
+  min-width: 580px;
+  padding: 10px 10px 0 10px;
+  width: 580px; }
+
+.ia-header-container {
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 150px; }
+
+.ia-addiction {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  left: 120px;
+  margin: 0;
+  margin-top: 15px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1; }
+
+.ia-addiction span {
+  color: #e6ff5b; }
+
+.ia-subtitle {
+  color: #095b8f;
+  font-size: 18px;
+  font-weight: 300;
+  left: 340px;
+  position: absolute;
+  top: 5px;
+  z-index: 1; }
+
+.ia-header-img {
+  position: absolute; }
+
+.sources {
+  background-image: url(../../img/sources-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 10px;
+  width: 580px; }
+
+.sources-text {
+  font: 100% sans-serif;
+  font-size: 12px; }
+
+.sources-text a {
+  color: #000;
+  text-decoration: none; }
 
 .anatomy-img {
   display: block;
@@ -28,9 +75,18 @@ main {
   padding: 10px;
   text-align: center; }
 
-.header-img {
+.header-img, .heroin-header-img, .alcohol-header-img, .marijuana-header-img {
   margin: 0 10px 10px 0;
   width: 100px; }
+
+.heroin-header-img {
+  height: 60px; }
+
+.alcohol-header-img {
+  width: 40px; }
+
+.marijuana-header-img {
+  width: 50px; }
 
 .flex-container {
   display: -webkit-flex;
@@ -40,6 +96,7 @@ main {
 .title {
   color: white;
   font-size: 38px;
+  font-weight: 300;
   margin: 0; }
 
 .symptom-title, .symptom-title-left, .symptom-title-right {
@@ -69,7 +126,13 @@ main {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-.info-box, .restlessness, .headaches, .sweating, .dilated, .twitching, .sad-or-angry, .sniffling, .elated, .sweats, .weight-loss {
+.sr-hr {
+  border: 5px solid #2379b2;
+  margin: 0;
+  margin-top: -2px;
+  width: 590px; }
+
+.info-box, .restlessness, .headaches, .sweating, .dilated, .twitching, .sad-or-angry, .sniffling, .elated, .sweats, .weight-loss, .h-extreme-fatigue, .h-confusion, .h-small-pupils, .h-twitching, .h-sniffling, .h-dry-mouth, .h-itching, .h-short-breath, .h-weight-loss, .h-skin, .h-needle, .h-chills, .h-droopiness, .a-confusion, .a-pupils, .a-redness, .a-spider, .a-talking, .a-appetite, .a-skin, .a-decreased-balance, .a-swelling, .a-poor-balance, .m-concentrate, .m-relaxation, .m-anger, .m-eyes, .m-yellow-teeth, .m-laughter, .m-coughing, .m-poor-balance, .me-attention, .me-depression, .me-hair-loss, .me-pupils, .me-teeth, .me-sweatiness, .me-talkativiness, .me-heavy-breating, .me-weight-loss, .me-skin, .me-chills, .me-trembling {
   width: 0%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
@@ -116,8 +179,183 @@ main {
   left: 340px;
   margin-top: 276px; }
 
+.h-extreme-fatigue {
+  left: 70px;
+  margin-top: 2px; }
+
+.h-confusion {
+  left: 320px;
+  margin-top: 14px; }
+
+.h-small-pupils {
+  left: 42px;
+  margin-top: 51px; }
+
+.h-twitching {
+  left: 320px;
+  margin-top: 48px; }
+
+.h-sniffling {
+  left: 310px;
+  margin-top: 84px; }
+
+.h-dry-mouth {
+  left: 89px;
+  margin-top: 114px; }
+
+.h-itching {
+  left: 396px;
+  margin-top: 130px; }
+
+.h-short-breath {
+  left: 10px;
+  margin-top: 200px; }
+
+.h-weight-loss {
+  left: 340px;
+  margin-top: 244px; }
+
+.h-skin {
+  left: 18px;
+  margin-top: 304px; }
+
+.h-needle {
+  left: 422px;
+  margin-top: 300px; }
+
+.h-chills {
+  left: 430px;
+  margin-top: 405px; }
+
+.h-droopiness {
+  left: 28px;
+  margin-top: 415px; }
+
+.a-confusion {
+  left: 10px;
+  margin-top: 2px; }
+
+.a-pupils {
+  left: 2px;
+  margin-top: 52px; }
+
+.a-redness {
+  left: 330px;
+  margin-top: 56px; }
+
+.a-spider {
+  left: 391px;
+  margin-top: 112px; }
+
+.a-talking {
+  left: 48px;
+  margin-top: 110px; }
+
+.a-appetite {
+  left: 334px;
+  margin-top: 188px; }
+
+.a-skin {
+  left: 428px;
+  margin-top: 280px; }
+
+.a-decreased-balance {
+  left: 347px;
+  margin-top: 342px; }
+
+.a-swelling {
+  left: 416px;
+  margin-top: 409px; }
+
+.a-poor-balance {
+  left: 8px;
+  margin-top: 378px; }
+
+.m-concentrate {
+  left: 320px;
+  margin-top: 0px; }
+
+.m-relaxation {
+  left: 2px;
+  margin-top: 2px; }
+
+.m-anger {
+  left: 330px;
+  margin-top: 44px; }
+
+.m-eyes {
+  left: 40px;
+  margin-top: 51px; }
+
+.m-yellow-teeth {
+  left: 310px;
+  margin-top: 100px; }
+
+.m-laughter {
+  left: 20px;
+  margin-top: 110px; }
+
+.m-coughing {
+  left: 336px;
+  margin-top: 240px; }
+
+.m-poor-balance {
+  left: 6px;
+  margin-top: 380px; }
+
+.me-attention {
+  left: 4px;
+  margin-top: 1px; }
+
+.me-depression {
+  left: 310px;
+  margin-top: 0px; }
+
+.me-hair-loss {
+  left: 326px;
+  margin-top: 46px; }
+
+.me-pupils {
+  left: 18px;
+  margin-top: 68px; }
+
+.me-teeth {
+  left: 306px;
+  margin-top: 84px; }
+
+.me-sweatiness {
+  left: 34px;
+  margin-top: 126px; }
+
+.me-talkativiness {
+  left: 12px;
+  margin-top: 106px; }
+
+.me-heavy-breating {
+  left: 20px;
+  margin-top: 220px; }
+
+.me-weight-loss {
+  left: 328px;
+  margin-top: 230px; }
+
+.me-skin {
+  left: 422px;
+  margin-top: 312px; }
+
+.me-chills {
+  left: 54px;
+  margin-top: 350px; }
+
+.me-trembling {
+  left: 422px;
+  margin-top: 388px; }
+
 .show {
   width: 200px; }
+
+.show260 {
+  width: 260px; }
 
 .show270 {
   width: 270px; }

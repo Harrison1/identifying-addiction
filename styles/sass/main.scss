@@ -3,7 +3,7 @@
 $font-stack: sans-serif;
 $primary-color: #333;
 
-$main-width: 600px;
+$main-width: 580px;
 
 $anatomy-img-width: 300px; 
 
@@ -14,20 +14,79 @@ $header-img-width: 100px;
 @import 'colors';
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
-  background-color: $bg-color;
-  max-width: $main-width;
-  min-width: $main-width;
-  width: $main-width;
   margin: 0;
 }
 
 main {
-	background-image: url("../../img/crack-cocaine/blue-bg.svg");
+	background-image: url("../../img/blue-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-   	padding: 10px 10px 0 10px;
+    font: 100% $font-stack;
+    max-width: $main-width;
+  	min-width: $main-width;
+  	padding: 10px 10px 0 10px;
+  	width: $main-width;
+}
+
+.ia-header-container {
+	margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 150px;
+}
+
+.ia-addiction {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    left: 120px;
+    margin: 0;
+    margin-top: 15px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+}
+
+.ia-addiction {
+	span {
+		color: $fr-yellow;
+	}
+}
+
+.ia-subtitle {
+	color: $fr-blue;
+    font-size: 18px;
+    font-weight: 300;
+    left: 340px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+
+.ia-header-img {
+	position: absolute;
+}
+
+.sources {
+    background-image: url(../../img/sources-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 10px;
+    width: 580px;
+}
+
+.sources-text {
+	font: 100% $font-stack;
+	font-size: 12px;
+}
+
+.sources-text {
+	a {
+		color: #000;
+    	text-decoration: none;
+	}
 }
 
 .anatomy-img {
@@ -51,6 +110,22 @@ main {
 	width: $header-img-width;
 }
 
+.heroin-header-img {
+	@extend .header-img;
+	height: 60px;
+}
+
+.alcohol-header-img {
+	@extend .header-img;
+	width: 40px;
+}
+
+.marijuana-header-img {
+	@extend .header-img;
+	width: 50px;
+}
+
+
 .flex-container {
 	display: -webkit-flex; 
 	display: flex;
@@ -60,6 +135,7 @@ main {
 .title {
 	color: white;
 	font-size: 38px;
+	font-weight: 300;
     margin: 0;
 
 }
@@ -102,6 +178,13 @@ main {
     margin-bottom: 10px;
 }
 
+.sr-hr {
+	border: 5px solid $sr-blue;
+    margin: 0;
+    margin-top: -2px;
+    width: 590px;
+}
+
 .info-box {
 	width: 0%;
     -webkit-transition: width 0.3s;
@@ -110,6 +193,7 @@ main {
     position: absolute;
 }
 
+/// CRACK/COCAINE ///
 .restlessness {
 	@extend .info-box;
     left: 80px;
@@ -170,8 +254,286 @@ main {
     margin-top: 276px;
 }
 
+/// HEROIN ///
+.h-extreme-fatigue {
+	@extend .info-box;
+    left: 70px;
+    margin-top: 2px;
+}
+
+.h-confusion {
+	@extend .info-box;
+    left: 320px;
+    margin-top: 14px;
+}
+
+
+.h-small-pupils {
+	@extend .info-box;
+    left: 42px;
+    margin-top: 51px;
+}
+
+
+.h-twitching {
+	@extend .info-box;
+	left: 320px;
+    margin-top: 48px;
+}
+
+
+.h-sniffling {
+	@extend .info-box;
+    left: 310px;
+    margin-top: 84px;
+}
+
+
+.h-dry-mouth {
+	@extend .info-box;
+    left: 89px;
+    margin-top: 114px;	
+}
+
+
+.h-itching {
+	@extend .info-box;
+	left: 396px;
+    margin-top: 130px;	
+}
+
+.h-short-breath {
+	@extend .info-box;
+    left: 10px;
+    margin-top: 200px;
+}
+
+
+.h-weight-loss {
+	@extend .info-box;
+    left: 340px;
+    margin-top: 244px;
+}
+
+
+.h-skin {
+	@extend .info-box;
+    left: 18px;
+    margin-top: 304px;
+}
+
+
+.h-needle {
+	@extend .info-box;
+    left: 422px;
+    margin-top: 300px;
+}
+
+
+.h-chills {
+	@extend .info-box;
+    left: 430px;
+    margin-top: 405px;	
+}
+
+.h-droopiness {
+	@extend .info-box;
+	left: 28px;
+    margin-top: 415px;
+}
+
+/// ALCOHOL ///
+.a-confusion {
+	@extend .info-box;
+    left: 10px;
+    margin-top: 2px;
+}
+
+.a-pupils {
+	@extend .info-box;
+    left: 2px;
+    margin-top: 52px;
+}
+
+.a-redness {
+	@extend .info-box;
+    left: 330px;
+    margin-top: 56px;
+}
+			
+
+.a-spider {
+	@extend .info-box;
+    left: 391px;
+    margin-top: 112px;
+}
+
+.a-talking {
+	@extend .info-box;
+    left: 48px;
+    margin-top: 110px;
+}
+
+
+.a-appetite {
+	@extend .info-box;
+    left: 334px;
+    margin-top: 188px;
+}
+
+.a-skin {
+	@extend .info-box;
+    left: 428px;
+    margin-top: 280px;
+}
+
+.a-decreased-balance {
+	@extend .info-box;
+    left: 347px;
+    margin-top: 342px;
+}
+
+.a-swelling {
+	@extend .info-box;
+    left: 416px;
+    margin-top: 409px;
+}
+
+.a-poor-balance {
+	@extend .info-box;
+	left: 8px;
+    margin-top: 378px;
+}
+
+/// MARIJUANA ///
+.m-concentrate {
+	@extend .info-box;
+    left: 320px;
+    margin-top: 0px;
+}
+
+.m-relaxation {
+	@extend .info-box;
+	left: 2px;
+    margin-top: 2px;
+}
+
+.m-anger {
+	@extend .info-box;
+    left: 330px;
+    margin-top: 44px;
+}
+
+.m-eyes {
+	@extend .info-box;
+    left: 40px;
+    margin-top: 51px;
+}
+
+.m-yellow-teeth {
+	@extend .info-box;
+    left: 310px;
+    margin-top: 100px;
+}
+
+.m-laughter {
+	@extend .info-box;
+    left: 20px;
+    margin-top: 110px;
+}
+
+.m-coughing {
+	@extend .info-box;
+    left: 336px;
+    margin-top: 240px;
+}
+
+.m-poor-balance {
+	@extend .info-box;
+	left: 6px;
+    margin-top: 380px;
+}
+
+/// METH ///
+.me-attention {
+	@extend .info-box;
+	left: 4px;
+    margin-top: 1px;
+}
+
+.me-depression {
+	@extend .info-box;
+    left: 310px;
+    margin-top: 0px;
+}
+
+.me-hair-loss {
+	@extend .info-box;
+    left: 326px;
+    margin-top: 46px;
+}
+
+.me-pupils {
+	@extend .info-box;
+    left: 18px;
+    margin-top: 68px;
+}
+
+.me-teeth {
+	@extend .info-box;
+    left: 306px;
+    margin-top: 84px;
+}
+
+.me-sweatiness {
+	@extend .info-box;
+    left: 34px;
+    margin-top: 126px;
+}
+
+.me-talkativiness {
+	@extend .info-box;
+    left: 12px;
+    margin-top: 106px;
+}
+
+.me-heavy-breating {
+	@extend .info-box;
+    left: 20px;
+    margin-top: 220px;
+}
+
+.me-weight-loss {
+	@extend .info-box;
+	left: 328px;
+    margin-top: 230px;
+}
+
+.me-skin {
+	@extend .info-box;
+    left: 422px;
+    margin-top: 312px;
+}
+
+.me-chills {
+	@extend .info-box;
+    left: 54px;
+    margin-top: 350px;
+}
+
+.me-trembling {
+	@extend .info-box;
+	left: 422px;
+    margin-top: 388px;
+}
+
+
 .show {
 	width: 200px;
+}
+
+.show260 {
+	width: 260px;
 }
 
 .show270 {
